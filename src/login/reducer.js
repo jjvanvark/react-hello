@@ -13,7 +13,7 @@ export default (state = initialState, action) => {
     case 'SET_PASSWORD':
       return {...state, passwordField: action.payload};
     case 'CHECK_LOGIN':
-      if(state.usernameField === 
+      return state;
     default:
       return state;
   }
